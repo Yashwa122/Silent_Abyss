@@ -41,6 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Humans
-    uniqueID: 2611662735
+  - name: Actor
+    uniqueID: 46742663
     locked: 0
