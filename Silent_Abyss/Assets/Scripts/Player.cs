@@ -8,9 +8,14 @@ public class Player : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
+    Animator animator;
+    string currentState;
+    bool isMoving = false;
+
 
     private void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
@@ -21,15 +26,53 @@ public class Player : MonoBehaviour
         
         moveDelta = new Vector3(x,y,0);
 
+
+
+
+
+
+        //moving
+        if (Mathf.Abs(x) + Mathf.Abs(y) != 0)
+        {
+            isMoving = true;
+
+        }
+        else
+        {
+            isMoving = false;
+            PlayAnim("idle down");
+            
+        }
+
         if (moveDelta.x > 0)
-            transform.localScale = Vector3.one;
+        {
+            //transform.localScale = Vector3.one;
+            PlayAnim("right walk");
+
+        }
         else if (moveDelta.x < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
+            PlayAnim("left walk");
+
+        if (moveDelta.y > 0)
+        {
+            //transform.localScale = Vector3.one;
+            PlayAnim("up walk");
+
+        }
+        else if (moveDelta.y < 0)
+            PlayAnim("down walk");
+
+
+
+
+
+        //transform.localScale = new Vector3(-1, 1, 1);
 
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
             transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
+            
         }
 
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x,0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
@@ -40,12 +83,21 @@ public class Player : MonoBehaviour
     }
 
     //void Cam()
-        //{
-        //float x, y, z;
+    //{
+    //float x, y, z;
 
-        //x = Mathf.Clamp(x, -100, 100);
+    //x = Mathf.Clamp(x, -100, 100);
 
-        //transform.position = new Vector3(x, y, z);
+    //transform.position = new Vector3(x, y, z);
 
-        //}
+    //}
+    //animation
+    void PlayAnim(string newState)
+    {
+        if (currentState == newState) return;
+        animator.Play(newState);
+            
+        currentState = newState;
+       
+    }
 }
