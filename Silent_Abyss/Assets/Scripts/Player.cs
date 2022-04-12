@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     private BoxCollider2D boxCollider;
     private Vector3 moveDelta;
     private RaycastHit2D hit;
     Animator animator;
     string currentState;
     bool isMoving = false;
-
 
     private void Start()
     {
@@ -25,11 +23,6 @@ public class Player : MonoBehaviour
         float y = Input.GetAxisRaw("Vertical");
         
         moveDelta = new Vector3(x,y,0);
-
-
-
-
-
 
         //moving
         if (Mathf.Abs(x) + Mathf.Abs(y) != 0)
@@ -62,10 +55,6 @@ public class Player : MonoBehaviour
         else if (moveDelta.y < 0)
             PlayAnim("down walk");
 
-
-
-
-
         //transform.localScale = new Vector3(-1, 1, 1);
 
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
@@ -91,6 +80,7 @@ public class Player : MonoBehaviour
     //transform.position = new Vector3(x, y, z);
 
     //}
+
     //animation
     void PlayAnim(string newState)
     {
