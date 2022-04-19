@@ -44,16 +44,19 @@ public class Player : MonoBehaviour
 
         }
         else if (moveDelta.x < 0)
+        {
             PlayAnim("left walk");
-
-        if (moveDelta.y > 0)
+        }
+        else if (moveDelta.y > 0)
         {
             //transform.localScale = Vector3.one;
             PlayAnim("up walk");
 
         }
         else if (moveDelta.y < 0)
+        {
             PlayAnim("down walk");
+        }
 
         //transform.localScale = new Vector3(-1, 1, 1);
 
