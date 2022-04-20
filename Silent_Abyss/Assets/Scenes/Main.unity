@@ -1885,7 +1885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &658012913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2050,7 +2050,6 @@ MonoBehaviour:
     maxNormalAngle: 0
   sceneNames:
   - Dungeon
-  - Main
 --- !u!61 &1166880764
 BoxCollider2D:
   m_ObjectHideFlags: 0
