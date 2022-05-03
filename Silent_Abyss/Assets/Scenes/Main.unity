@@ -2249,7 +2249,7 @@ MonoBehaviour:
   weaponPrices: 
   xpTable: 
   player: {fileID: 0}
-  Rumin: 0
+  rumin: 0
   exp: 0
 --- !u!4 &676823536
 Transform:

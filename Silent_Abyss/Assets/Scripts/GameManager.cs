@@ -1,13 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     private void Awake()
     {
+        if (GameManager.instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         instance = this;
+        SceneManager.sceneLoaded += LoadState;
+        DontDestroyOnLoad(gameObject);
     }
 
     // Ressources
@@ -20,18 +29,30 @@ public class GameManager : MonoBehaviour
     public Player player;
 
     // Logic
-    public int Rumin;
+    public int rumin;
     public int exp;
 
     public void SaveState()
     {
         string save = "";
 
-        save += Rumin.ToString() + "|";
+        save += rumin.ToString() + "|";
+        save += exp.ToString() + "|";
+        save += "0";
+
+        PlayerPrefs.GetString("SaveState", save);
     }
 
-    public void LoadState()
+    public void LoadState(Scene save, LoadSceneMode mode)
     {
+        if (!PlayerPrefs.HasKey("SaveState"))
+            return;
+
+        string[] data = PlayerPrefs.GetString("SaveState").Split('|');
+
+        rumin = int.Parse(data[1]);
+        exp = int.Parse(data[2]);
+
         Debug.Log("LoadState");
     }
 }
