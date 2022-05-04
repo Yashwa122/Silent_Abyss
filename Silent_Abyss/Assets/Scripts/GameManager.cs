@@ -27,10 +27,13 @@ public class GameManager : MonoBehaviour
 
     // References
     public Player player;
+    public FloatingText floatingText;
 
     // Logic
     public int rumin;
     public int exp;
+
+
 
     public void SaveState()
     {
@@ -42,7 +45,6 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.GetString("SaveState", save);
     }
-
     public void LoadState(Scene save, LoadSceneMode mode)
     {
         if (!PlayerPrefs.HasKey("SaveState"))
