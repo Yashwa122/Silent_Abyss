@@ -74,16 +74,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    //void Cam()
-    //{
-    //float x, y, z;
-
-    //x = Mathf.Clamp(x, -100, 100);
-
-    //transform.position = new Vector3(x, y, z);
-
-    //}
-
     //animation
     void PlayAnim(string newState)
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chest : Collectable
 {
     public Sprite emptyChest;
-    public int ruminAmount = 5;
+    public int shmeklsAmount = 5;
 
     protected override void OnCollect()
     {
@@ -13,7 +13,7 @@ public class Chest : Collectable
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
-            Debug.Log("Grant " + ruminAmount + " Rumin");
+            Debug.Log("Grant " + shmeklsAmount + " Shmekls");
         }
     }
 }

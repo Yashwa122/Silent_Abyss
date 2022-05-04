@@ -27,19 +27,23 @@ public class GameManager : MonoBehaviour
 
     // References
     public Player player;
-    public FloatingText floatingText;
+    public FloatingTextManager floatingTextManager;
 
     // Logic
-    public int rumin;
+    public int shmekls;
     public int exp;
 
-
+    //Floating text
+    public void ShowText(string message, int fontSize, Color colour, Vector3 position, Vector3 motion, float duration) 
+    {
+        floatingTextManager.Show(message, fontSize, colour, position, motion, duration);
+    }
 
     public void SaveState()
     {
         string save = "";
 
-        save += rumin.ToString() + "|";
+        save += shmekls.ToString() + "|";
         save += exp.ToString() + "|";
         save += "0";
 
@@ -52,7 +56,7 @@ public class GameManager : MonoBehaviour
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
-        rumin = int.Parse(data[1]);
+        shmekls = int.Parse(data[1]);
         exp = int.Parse(data[2]);
 
         Debug.Log("LoadState");
