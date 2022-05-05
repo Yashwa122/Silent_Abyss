@@ -156,6 +156,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1093,6 +1094,48 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      stair_2: 4879027209402915481
+      wall_11: 6509488501444577526
+      wall_12: 3816824116941734870
+      right_wall_1: -1535022218899413319
+      right_corner_bottom: 7983701011605003892
+      pillar_1: -245080028896732565
+      wall_2: 7242711705414544821
+      wall_0: 4892758096640422895
+      wall_6: -1061403988284597372
+      left_corner_bottom: -7471248973779220849
+      back_wall_1: 5998153076189725262
+      wall_1: 5371668480493708874
+      big_lava_1: -5679954376345764613
+      pillar_2: -3859535907844111214
+      cracked_wall: -4404020083237190567
+      left_wall_2: -4872158677436175993
+      wall_3: -9076049124341559390
+      wall_5: 865414811035567843
+      stair_4: -5641185167581205611
+      wall_10: 1334832777943504295
+      stair_1: 1150503768254010053
+      wall_4: 5927728127925365382
+      back_wall_3: -2051329789207916426
+      left_wall_1: 7681284086224381316
+      right_floor: -8664292585751092018
+      right_wall_3: 2260007024891257760
+      flag_wall: 8528916948945910942
+      wall_8: 4384877590845482656
+      left_wall_3: 5078967732767195557
+      right_wall_2: -6166551141650739353
+      big_lava_2: -4919222366007266400
+      bigsmall_lava_3: -3719112721633449948
+      left_floor: 5148094427986114771
+      wall_7: -5314928234485048915
+      pillar_3: 6150784616941723864
+      right_corner_top: 3695394965697289869
+      wall_9: 5424555521226061478
+      back_wall_2: -8772141848038782220
+      stair_3: 5474836198623652124
+      left_corner_top: 1612195273468419267
+      floor_0: 9217723308596557119
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

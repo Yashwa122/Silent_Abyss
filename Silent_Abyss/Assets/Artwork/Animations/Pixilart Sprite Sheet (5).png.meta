@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -196,6 +197,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Pixilart Sprite Sheet (5)_0: -2696654103943573914
+      Pixilart Sprite Sheet (5)_2: -5866334002389237915
+      Pixilart Sprite Sheet (5)_1: -6258949090783132380
+      Pixilart Sprite Sheet (5)_3: 4229642227880345410
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -256,7 +257,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0ab33aa0ef9911110800000000000000
-      internalID: 1229933489628068768
+      internalID: -99863997653672337
       vertices: []
       indices: 
       edges: []
@@ -292,6 +293,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      back_wall_8: -3878746320484667397
+      back_wall_5: -5705598954417356183
+      back_wall_7: -8007958337242289921
+      left_corner_bottom_2: 6025446755300865735
+      back_wall_6: -99863997653672337
+      back_wall_4: -4720410259481830676
+      stair_down_1: 2678468613404992673
+      right_corner_bottom_2: 7712344882380393597
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
