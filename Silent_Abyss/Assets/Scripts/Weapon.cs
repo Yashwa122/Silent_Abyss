@@ -24,7 +24,7 @@ public class Weapon : Collectable
 
     protected override void Update()
     {
-        base.Update();
+        //base.Update();
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
