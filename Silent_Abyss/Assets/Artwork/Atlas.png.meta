@@ -604,6 +604,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Sword_0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 161
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca8185675fb7e04db1bdedc99659ce4
+      internalID: -1345611688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 161
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b3212f1fb31934188a77286089411f
+      internalID: -2037102573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 161
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4036033bde4c7b4bb99d106e6016c82
+      internalID: -118504796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword_3
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 225
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2068134b20147ba449fd942927ae6fb7
+      internalID: -293255474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ee743da5f025f4d933d70bbb261ee4
+      internalID: 1413939714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -615,7 +720,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Enemy_0: 1324703859
+      Sword_0: -1345611688
       Torch_7: -2016447386726003157
+      Sword_3: -293255474
       Torch_8: -6026731920720571777
       Torch_2: 4101294306171259788
       SingleBox_1: 3235062197104327778
@@ -624,11 +732,13 @@ TextureImporter:
       Torch_6: 620111541035404702
       Torch_5: -2285114424382770006
       Player_0: 4018074224661003100
+      Sword_2: -118504796
       DoubleBox_1: 6913638643635410091
       SingleBox_2: 2466828561161279858
       Chest_1: -1988828135353101337
       Chest_Full: -2386295036631077607
       Chest_Empty: -6613792370922084840
+      Sword_1: -2037102573
       Torch_4: -9037411367760340442
       Torch_3: 8340130823153958410
       Torch_1: 219433517873854331
