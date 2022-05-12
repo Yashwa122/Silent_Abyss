@@ -7,7 +7,7 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
 
-    [Header("Ink JSON")]
+    [Header("InkJSON")]
     [SerializeField] private GameObject inkJSON;
 
     private bool playerInRange;
@@ -23,6 +23,10 @@ public class DialogueTrigger : MonoBehaviour
         if (playerInRange)
         {
             visualCue.SetActive(true);
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Advanced");
+            }
         }
         else
         {
@@ -30,17 +34,17 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D Player)
     {
-        if (Collider.gameObject.tag == "Fighter")
+        if (Player.gameObject.tag == "Fighter")
         {
             playerInRange = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D Player)
     {
-        if (Collider.gameObject.tag == "Fighter")
+        if (Player.gameObject.tag == "Fighter")
         {
             playerInRange = false;
         }
