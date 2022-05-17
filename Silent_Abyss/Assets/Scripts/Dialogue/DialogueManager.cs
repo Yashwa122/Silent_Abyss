@@ -42,10 +42,12 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (InputManager.GetInstance().GetSubmitPressed())
+
+        if (Input.GetKeyDown(KeyCode.R))
         {
             ContinueStory();
         }
+        
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)
