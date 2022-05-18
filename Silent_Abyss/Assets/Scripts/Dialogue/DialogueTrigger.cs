@@ -8,7 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private GameObject visualCue;
 
     [Header("InkJSON")]
-    [SerializeField] private GameObject inkJSON;
+    [SerializeField] private TextAsset inkJSON;
 
     private bool playerInRange;
 
@@ -20,12 +20,12 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange)
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying)
         {
             visualCue.SetActive(true);
             if(Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Advanced");
+                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             }
         }
         else
